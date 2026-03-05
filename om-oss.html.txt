@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Om oss — Rørlegger Vest AS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">
+        <span class="logo-mark">RV</span>
+        <span class="logo-text">Rørlegger Vest AS</span>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Hjem</a></li>
+          <li><a href="om-oss.html" class="active">Om oss</a></li>
+          <li><a href="tjenester.html">Våre tjenester</a></li>
+          <li><a href="kontakt-oss.html" class="cta-link">Kontakt oss</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="om-oss-tittel">
+      <div class="hero-content container">
+        <h1 id="om-oss-tittel">Om Rørlegger Vest AS</h1>
+        <p>
+          Rørlegger Vest AS er et lokalt rørleggerfirma med base i Rogaland. Vi leverer
+          fagmessige løsninger innen vann, avløp og varme til både privatkunder og bedrifter.
+          Vårt fokus er kvalitet, ryddighet og god kommunikasjon gjennom hele prosjektet.
+        </p>
+
+        <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1rem">
+          <a href="kontakt-oss.html" class="btn btn-primary">Kontakt oss</a>
+          <a href="tjenester.html" class="btn btn-secondary">Se våre tjenester</a>
+        </div>
+
+        <p class="hero-subtext" style="margin-top:0.9rem">
+          Døgnvakt ved akutte lekkasjer · Sertifiserte fagfolk · Gratis befaring
+        </p>
+      </div>
+
+      <div class="hero-image container" aria-hidden="true" style="margin-top:0.6rem">
+        <img src="img/hero-rorlegger.jpg" alt="Rørlegger med rør og verktøy">
+      </div>
+    </section>
+
+    <section class="services-preview container" aria-labelledby="vår-historie">
+      <h2 id="vår-historie">Vår historie</h2>
+      <p style="color:var(--muted)">
+        Selskapet ble startet av erfarne rørleggere som ønsket å kombinere tradisjonelt håndverk
+        med moderne løsninger. Vi har gjennom årene vokst jevnt, samtidig som vi har beholdt
+        nærheten til kundene og lokal forankring.
+      </p>
+
+      <div style="display:grid;gap:1rem;margin-top:1rem">
+        <article class="service-card">
+          <h3>Visjon</h3>
+          <p style="color:var(--muted)">Å være førstevalget for rørleggertjenester i regionen — kjent for kvalitet og pålitelighet.</p>
+        </article>
+
+        <article class="service-card">
+          <h3>Verdier</h3>
+          <p style="color:var(--muted)">
+            Ærlighet, faglig stolthet og god kundebehandling. Vi rydder opp etter oss og leverer
+            alltid dokumentasjon på utført arbeid.
+          </p>
+        </article>
+
+        <article class="service-card">
+          <h3>Sertifiseringer</h3>
+          <p style="color:var(--muted)">
+            Våre montører er godkjente og oppdaterer jevnlig kompetansen innen våtrom, varme og
+            energieffektive løsninger.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="image-strip container" aria-labelledby="team-og-kompetanse" style="margin-top:1.25rem">
+      <div class="image-strip-image" style="max-width:520px">
+        <img src="img/service-ror.jpg" alt="Rørinstallasjon utendørs">
+      </div>
+
+      <div class="image-strip-content">
+        <h2 id="team-og-kompetanse">Team og kompetanse</h2>
+        <p style="color:var(--muted)">
+          Teamet vårt består av faglærte rørleggere med bred erfaring fra både små reparasjoner
+          og større entrepriser. Vi legger vekt på sikkerhet, ryddig dokumentasjon og god dialog
+          med kunden gjennom hele prosessen.
+        </p>
+
+        <ul style="color:var(--muted);margin-top:0.6rem">
+          <li><strong>Faglærte montører</strong> — alle med relevant sertifisering</li>
+          <li><strong>Service og vedlikehold</strong> — faste serviceavtaler for bedrifter og borettslag</li>
+          <li><strong>Prosjektledelse</strong> — vi koordinerer tverrfaglige oppdrag</li>
+        </ul>
+
+        <p style="margin-top:0.8rem">
+          <a href="kontakt-oss.html" class="text-link">Be om gratis befaring</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="services-preview container" aria-labelledby="arbeidsomrade" style="margin-top:1.25rem">
+      <h2 id="arbeidsomrade">Arbeidsområde</h2>
+      <p style="color:var(--muted)">
+        Vi dekker hele Rogaland med hovedvekt på Stavanger, Sandnes og omegn. For større prosjekter
+        tar vi oppdrag i hele Sør‑Vestlandet.
+      </p>
+
+      <h3 style="margin-top:0.8rem">Kontaktinformasjon</h3>
+      <p style="color:var(--muted);margin:0">
+        Telefon: <strong>99 99 99 99</strong><br>
+        E‑post: <strong>post@rorleggervest.no</strong><br>
+        Org.nr: <strong>999 999 999</strong>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Rørlegger Vest AS. Alle rettigheter reservert.</p>
+      <p class="footer-contact" style="color:var(--muted)">
+        Telefon: 99 99 99 99 · E-post: post@rorleggervest.no
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

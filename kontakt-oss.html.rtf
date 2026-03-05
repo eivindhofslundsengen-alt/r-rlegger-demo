@@ -1,0 +1,158 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="no">\
+<head>\
+  <meta charset="utf-8">\
+  <meta name="viewport" content="width=device-width,initial-scale=1">\
+  <title>Kontakt oss \'97 R\'f8rlegger Vest AS</title>\
+  <link rel="stylesheet" href="css/style.css">\
+</head>\
+<body>\
+  <header class="site-header">\
+    <div class="container">\
+      <div class="logo">\
+        <span class="logo-mark">RV</span>\
+        <span class="logo-text">R\'f8rlegger Vest AS</span>\
+      </div>\
+\
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">\
+      <label for="nav-toggle" class="nav-toggle-label">\
+        <span></span>\
+      </label>\
+\
+      <nav class="main-nav">\
+        <ul>\
+          <li><a href="index.html">Hjem</a></li>\
+          <li><a href="om-oss.html">Om oss</a></li>\
+          <li><a href="tjenester.html">V\'e5re tjenester</a></li>\
+          <li><a href="kontakt-oss.html" class="active cta-link">Kontakt oss</a></li>\
+        </ul>\
+      </nav>\
+    </div>\
+  </header>\
+\
+  <main>\
+    <section class="hero" aria-labelledby="kontakt-tittel">\
+      <div class="hero-content container">\
+        <h1 id="kontakt-tittel">Kontakt oss</h1>\
+        <p>\
+          Trenger du rask hjelp eller \'f8nsker du gratis befaring? Ring oss direkte eller fyll ut skjemaet nedenfor.\
+          Merk felt med * er obligatoriske.\
+        </p>\
+\
+        <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1rem">\
+          <a href="tel:+4799999999" class="btn btn-primary">Ring oss: 99 99 99 99</a>\
+          <a href="mailto:post@rorleggervest.no" class="btn btn-secondary">Send e-post</a>\
+        </div>\
+\
+        <p class="hero-subtext" style="margin-top:0.9rem">\
+          Akutt? Merk skjemaet med \'abAkutt\'bb eller ring oss direkte.\
+        </p>\
+      </div>\
+\
+      <div class="hero-image container" aria-hidden="true" style="margin-top:0.6rem">\
+        <img src="img/hero-rorlegger.jpg" alt="R\'f8rlegger med r\'f8r og verkt\'f8y">\
+      </div>\
+    </section>\
+\
+    <section class="services-preview container" aria-labelledby="skjema-tittel" style="margin-top:1.25rem">\
+      <h2 id="skjema-tittel">Send oss en melding</h2>\
+\
+      <!-- Merk: action kan byttes til en form\uc0\u8209 tjeneste eller backend -->\
+      <form id="contact-form" method="POST" action="https://formspree.io/f/your-form-id" style="display:grid;gap:0.75rem;max-width:720px">\
+        <label>\
+          Navn *\
+          <input type="text" name="navn" required placeholder="Fornavn Etternavn" />\
+        </label>\
+\
+        <label>\
+          Telefon *\
+          <input type="tel" name="telefon" required placeholder="99 99 99 99" pattern="[0-9+\\s\\-()]\{6,\}" />\
+        </label>\
+\
+        <label>\
+          E-post *\
+          <input type="email" name="epost" required placeholder="navn@eksempel.no" />\
+        </label>\
+\
+        <label>\
+          Emne\
+          <input type="text" name="emne" placeholder="Kort emne (f.eks. lekkasje i kjeller)" />\
+        </label>\
+\
+        <label>\
+          Melding *\
+          <textarea name="melding" rows="6" required placeholder="Beskriv problemet eller hva du \'f8nsker hjelp med"></textarea>\
+        </label>\
+\
+        <label style="display:flex;gap:0.6rem;align-items:center">\
+          <input type="checkbox" name="akutt" value="ja" />\
+          <span>Merk som akutt (prioriteres)</span>\
+        </label>\
+\
+        <div style="display:flex;gap:0.6rem;flex-wrap:wrap">\
+          <button type="submit" class="btn btn-primary">Send melding</button>\
+          <button type="reset" class="btn btn-secondary" style="background:transparent;border:1px solid rgba(255,255,255,0.06)">T\'f8m skjema</button>\
+        </div>\
+\
+        <p style="color:var(--muted);font-size:0.95rem;margin-top:0.4rem">\
+          Ved innsending f\'e5r du en bekreftelse per e\uc0\u8209 post hvis skjemaet er koblet til en tjeneste. For akutte saker ring 99 99 99 99.\
+        </p>\
+      </form>\
+    </section>\
+\
+    <section class="services-preview container" aria-labelledby="adresse" style="margin-top:1.25rem">\
+      <h2 id="adresse">Bes\'f8k eller post</h2>\
+      <p style="color:var(--muted);margin:0">\
+        R\'f8rlegger Vest AS \'b7 Hovedkontor: Eksempelveien 12, 4007 Stavanger<br>\
+        \'c5pningstider: Man\'96Fre 08:00\'9616:00 \'b7 D\'f8gnvakt ved akutt lekkasje\
+      </p>\
+\
+      <h3 style="margin-top:0.8rem">Kart og veibeskrivelse</h3>\
+      <p style="color:var(--muted);margin:0">\
+        Legg gjerne inn adresse i din foretrukne karttjeneste. For st\'f8rre prosjekter avtaler vi befaring p\'e5 stedet.\
+      </p>\
+    </section>\
+\
+    <section class="services-preview container" aria-labelledby="personvern" style="margin-top:1.25rem;margin-bottom:2rem">\
+      <h2 id="personvern">Personvern</h2>\
+      <p style="color:var(--muted)">\
+        Vi behandler personopplysninger i henhold til gjeldende regelverk. Opplysninger fra skjemaet brukes kun for \'e5 kontakte deg og utf\'f8re avtalt arbeid.\
+      </p>\
+    </section>\
+  </main>\
+\
+  <footer class="site-footer">\
+    <div class="footer-inner">\
+      <p>\'a9 2026 R\'f8rlegger Vest AS. Alle rettigheter reservert.</p>\
+      <p class="footer-contact" style="color:var(--muted)">\
+        Telefon: 99 99 99 99 \'b7 E-post: post@rorleggervest.no\
+      </p>\
+    </div>\
+  </footer>\
+\
+  <!-- Enkel klientvalidering og bekreftelse (ingen ekstern avhengighet) -->\
+  <script>\
+    (function()\{\
+      const form = document.getElementById('contact-form');\
+      if(!form) return;\
+      form.addEventListener('submit', function(e)\{\
+        // Hvis action er Formspree eller annen tjeneste, la native sende.\
+        // Hvis action er tom eller '#', vis enkel bekreftelse og forhindre submit.\
+        const action = form.getAttribute('action') || '';\
+        if(action.trim() === '' || action.includes('your-form-id'))\{\
+          e.preventDefault();\
+          alert('Skjemaet er klart. Bytt ut action-attributtet med din form\uc0\u8209 endpoint for \'e5 sende meldinger.'); \
+        \}\
+      \});\
+    \})();\
+  </script>\
+</body>\
+</html>\
+}

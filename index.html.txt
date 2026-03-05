@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rørlegger Vest AS – Profesjonell rørlegger i ditt nærområde</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-mark">RV</span>
+            <span class="logo-text">Rørlegger Vest AS</span>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html" class="active">Hjem</a></li>
+                <li><a href="om-oss.html">Om oss</a></li>
+                <li><a href="tjenester.html">Våre tjenester</a></li>
+                <li><a href="kontakt-oss.html" class="cta-link">Kontakt oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO-SEKSJON -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Trygge rør, trygt hjem.</h1>
+                <p>
+                    Vi er din lokale rørlegger med fokus på kvalitet, punktlighet og ryddig arbeid.
+                    Enten det er lekkasje, oppussing eller nyinstallasjon – vi fikser det.
+                </p>
+                <div class="hero-actions">
+                    <a href="kontakt-oss.html" class="btn btn-primary">Kontakt oss nå</a>
+                    <a href="tjenester.html" class="btn btn-secondary">Se våre tjenester</a>
+                </div>
+                <p class="hero-subtext">
+                    Døgnvakt ved akutte lekkasjer – vi er der når du trenger oss.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="img/hero-rorlegger.jpg" alt="Rørlegger med rør og verktøy">
+            </div>
+        </section>
+
+        <!-- KORTE TJENESTER -->
+        <section class="services-preview">
+            <div class="section-header">
+                <h2>Hva vi kan hjelpe deg med</h2>
+                <p>Fra små reparasjoner til komplette røranlegg – vi tar jobben på alvor.</p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Akutte lekkasjer</h3>
+                    <p>
+                        Rask utrykning ved vannlekkasje, tette rør og andre akutte problemer.
+                        Vi begrenser skadene og finner årsaken.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Bad og våtrom</h3>
+                    <p>
+                        Komplett rørleggerarbeid ved oppussing og nybygg. Vi samarbeider gjerne
+                        med andre håndverkere på prosjektet ditt.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <h3>Varme og energi</h3>
+                    <p>
+                        Varmepumper, gulvvarme og energieffektive løsninger som gir deg et
+                        behagelig inneklima året rundt.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- BILDESEKSJON MED RØR UTE -->
+        <section class="image-strip">
+            <div class="image-strip-image">
+                <img src="img/service-ror.jpg" alt="Rørinstallasjon utendørs">
+            </div>
+            <div class="image-strip-content">
+                <h2>Solid håndverk – ute og inne</h2>
+                <p>
+                    Vi tar oss av både innvendige og utvendige rørinstallasjoner. Enten det gjelder
+                    vann, avløp eller drenering, sørger vi for løsninger som varer.
+                </p>
+                <a href="om-oss.html" class="text-link">Les mer om oss</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Rørlegger Vest AS. Alle rettigheter reservert.</p>
+            <p class="footer-contact">
+                Org.nr 999 999 999 · Telefon: 99 99 99 99 · E-post: post@rorleggervest.no
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
