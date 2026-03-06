@@ -3,116 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Om oss — Rørlegger Vest AS</title>
-
-  <base href="/r-rlegger-demo/">
-  <link rel="preload" as="image" href="img/hero-rorlegger.jpg">
-  <link rel="preload" as="style" href="css/style.css">
+  <title>Om oss – Rørlegger Vest AS</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Om Rørlegger Vest AS — lokal rørlegger med fokus på kvalitet og døgnvakt.">
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem">
-      <div class="logo" aria-label="Rørlegger Vest AS logo">
-        <span class="logo-mark">RV</span>
-        <span class="logo-text">Rørlegger Vest AS</span>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">RV</div>
+      <div class="logo-text">
+        <span class="logo-name">Rørlegger Vest AS</span>
+        <span class="logo-tagline">Rørlegger i Bergen 24/7</span>
       </div>
-
-      <button id="nav-button" class="nav-toggle-label" aria-controls="main-nav" aria-expanded="false" aria-label="Åpne meny">
-        <span></span>
-      </button>
-
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hovedmeny">
-        <ul>
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="om-oss.html" class="active">Om oss</a></li>
-          <li><a href="tjenester.html">Våre tjenester</a></li>
-          <li><a href="kontakt-oss.html" class="cta-link">Kontakt oss</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" aria-labelledby="om-oss-tittel">
-      <div class="container" style="display:grid;grid-template-columns:1fr;gap:1rem">
-        <div class="hero-content">
-          <h1 id="om-oss-tittel">Om Rørlegger Vest AS</h1>
-          <p style="color:var(--muted)">
-            Lokal rørlegger med fokus på kvalitet, ryddighet og god kommunikasjon. Vi tilbyr
-            tjenester for privatkunder, borettslag og bedrifter.
-          </p>
+    <button id="nav-button" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">
+      <span></span><span></span>
+    </button>
 
-          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1rem">
-            <a href="kontakt-oss.html" class="btn btn-primary">Kontakt oss</a>
-            <a href="tjenester.html" class="btn btn-secondary">Se våre tjenester</a>
-          </div>
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="om-oss.html" class="active">Om oss</a></li>
+        <li><a href="tjenester.html">Våre tjenester</a></li>
+        <li><a href="kontakt-oss.html" class="nav-cta">Kontakt oss</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-          <p class="hero-subtext" style="margin-top:0.9rem;color:var(--muted)">Døgnvakt ved akutte lekkasjer · Gratis befaring</p>
-        </div>
+<main>
 
-        <div class="hero-image" aria-hidden="false">
-          <img
-            src="img/hero-rorlegger.jpg"
-            srcset="img/hero-rorlegger-800.jpg 800w, img/hero-rorlegger-1200.jpg 1200w, img/hero-rorlegger.jpg 1600w"
-            sizes="(max-width:720px) 100vw, 520px"
-            loading="lazy"
-            alt="Rørlegger med rør og verktøy"
-          >
-        </div>
-      </div>
-    </section>
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <p class="page-hero-kicker">Om oss</p>
+    <h1 class="page-hero-title">Et rørleggerteam du kan stole på</h1>
+    <p class="page-hero-text">
+      Vi er et sammensveiset team med over 5 års erfaring innen rørlegging, service, varme og våtrom.
+      Hos oss møter du fagfolk som faktisk bryr seg – om jobben, om resultatet og om deg som kunde.
+    </p>
+  </div>
+</section>
 
-    <section class="services-preview container" aria-labelledby="vår-historie" style="margin-top:1.25rem">
-      <h2 id="vår-historie">Vår historie</h2>
-      <p style="color:var(--muted)">Etablert av erfarne fagfolk. Vi kombinerer tradisjonelt håndverk med moderne løsninger og dokumentasjon.</p>
+<section class="about-section">
+  <div class="container about-layout">
 
-      <div style="display:grid;gap:1rem;margin-top:1rem">
-        <article class="service-card">
-          <h3>Visjon</h3>
-          <p style="color:var(--muted)">Å være førstevalget i regionen for rørleggertjenester.</p>
-        </article>
-
-        <article class="service-card">
-          <h3>Verdier</h3>
-          <p style="color:var(--muted)">Ærlighet, faglig stolthet og god kundebehandling.</p>
-        </article>
-
-        <article class="service-card">
-          <h3>Sertifiseringer</h3>
-          <p style="color:var(--muted)">Faglærte montører med oppdatert kompetanse innen våtrom og varme.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <p>© 2026 Rørlegger Vest AS · Telefon: <a href="tel:+4799999999" style="color:var(--accent)">99 99 99 99</a></p>
-      <p class="footer-contact" style="color:var(--muted)">post@rorleggervest.no · Eksempelveien 12, 4007 Stavanger</p>
+    <div class="about-image">
+      <img src="img/team-rorleggere.jpg" alt="Rørleggere på byggeplass">
     </div>
-  </footer>
 
-  <script>
-    (function(){
-      const btn = document.getElementById('nav-button');
-      const nav = document.getElementById('main-nav');
-      if(!btn || !nav) return;
-      btn.addEventListener('click', function(){
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        nav.classList.toggle('open');
-      });
-      nav.addEventListener('click', function(e){
-        if(e.target.tagName === 'A' && nav.classList.contains('open')){
-          nav.classList.remove('open');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    })();
-  </script>
-  <script>
+    <div class="about-text">
+      <h2>Hvem vi er</h2>
+      <p>
+        Rørlegger Vest AS består av erfarne rørleggere som har jobbet med alt fra akutte lekkasjer
+        til komplette baderom og større varmeinstallasjoner. Vi kombinerer fagkunnskap med
+        punktlighet, ryddighet og god kommunikasjon.
+      </p>
+
+      <h3>Hvorfor folk velger oss</h3>
+      <ul class="about-list">
+        <li>Over 5 års erfaring med både små og store prosjekter</li>
+        <li>Rask respons og tydelige avtaler</li>
+        <li>Ryddig arbeid og dokumentasjon der det er relevant</li>
+        <li>Et team som møter opp når vi sier vi kommer</li>
+        <li>Trygge, hyggelige og profesjonelle rørleggere</li>
+      </ul>
+
+      <a href="kontakt-oss.html" class="btn btn-primary">Kontakt oss</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Rørlegger Vest AS</p>
+    <p>Telefon: <a href="tel:+4799999999">99 99 99 99</a> · E‑post: <a href="mailto:post@rorleggervest.no">post@rorleggervest.no</a></p>
+  </div>
+</footer>
+
+<script>
 (function(){
   const btn = document.getElementById('nav-button');
   const nav = document.getElementById('main-nav');
