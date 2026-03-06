@@ -164,24 +164,25 @@ img {
 }
 
 .nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.35rem;
-  border-radius: 999px;
-  transition: background 0.15s ease;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 8px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
 }
 
 .nav-toggle span {
   display: block;
-  width: 22px;
-  height: 2px;
-  border-radius: 999px;
+  width: 24px;
+  height: 3px;
   background: #e5e7eb;
-  margin: 4px 0;
-  transition: transform 0.18s ease, opacity 0.18s ease;
+  border-radius: 3px;
 }
+
 
 /* HERO */
 
