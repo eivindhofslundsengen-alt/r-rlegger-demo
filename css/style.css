@@ -206,29 +206,66 @@ body {
    HERO
 ========================================= */
 
+/* HERO – PREMIUM FULLSCREEN */
 .hero {
   position: relative;
-  padding: 3.5rem 0 3rem;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* gjør at teksten ikke ligger helt til venstre */
+  padding: 4rem 1.5rem;
+  text-align: center; /* gjør teksten balansert */
+  background-image: url("img/DITT-BILDE-HER.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* Mørk overlay for lesbarhet */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at top left, rgba(56, 189, 248, 0.18), transparent 55%),
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.16), transparent 55%);
-  opacity: 0.9;
-  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.75)
+  );
+  z-index: 1;
 }
 
-.hero-inner {
+/* Tekstlag */
+.hero-content {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  gap: 2.5rem;
-  align-items: center;
-  z-index: 1;
+  z-index: 2;
+  max-width: 700px; /* gjør at teksten ikke blir for bred */
+  margin: 0 auto;
+}
+
+/* Overskrift */
+.hero-content h1 {
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Undertekst */
+.hero-content p {
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: #e5e7eb;
+  margin-bottom: 1.5rem;
+}
+
+/* Knapper */
+.hero-content .btn {
+  padding: 1rem 1.6rem;
+  font-size: 1.1rem;
+  border-radius: 999px;
+  margin: 0.3rem;
+}
+
 }
 
 /* Hero content */
