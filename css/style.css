@@ -1,7 +1,3 @@
-/* =========================
-   DESIGN SYSTEM
-========================= */
-
 :root {
   --max-width: 1200px;
   --page-padding: 1.5rem;
@@ -28,9 +24,7 @@
   --font-family: system-ui, -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
 }
 
-/* =========================
-   RESET / BASE
-========================= */
+/* RESET / BASE */
 
 *,
 *::before,
@@ -57,19 +51,13 @@ img {
   display: block;
 }
 
-/* =========================
-   LAYOUT
-========================= */
-
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--page-padding);
 }
 
-/* =========================
-   HEADER & NAV
-========================= */
+/* HEADER & NAV */
 
 .site-header {
   position: sticky;
@@ -93,7 +81,6 @@ img {
   padding: 0.9rem 0;
 }
 
-/* Logo */
 .logo {
   display: flex;
   align-items: center;
@@ -130,7 +117,6 @@ img {
   color: var(--text-soft);
 }
 
-/* Nav desktop */
 .main-nav {
   display: flex;
 }
@@ -177,7 +163,6 @@ img {
   transform: translateY(-1px) scale(1.01);
 }
 
-/* Hamburger */
 .nav-toggle {
   display: none;
   background: none;
@@ -198,9 +183,7 @@ img {
   transition: transform 0.18s ease, opacity 0.18s ease;
 }
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
   position: relative;
@@ -208,6 +191,9 @@ img {
   display: flex;
   align-items: center;
   padding: 3.5rem 0 3rem;
+}
+
+.hero--home {
   background-image: url("../img/hero-rorlegger.jpg");
   background-size: cover;
   background-position: center;
@@ -229,14 +215,13 @@ img {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
   gap: 2.5rem;
   align-items: center;
 }
 
-/* Stor brand-blokk */
-.hero-brand {
-  max-width: 520px;
+.hero-left {
+  max-width: 620px;
 }
 
 .hero-kicker {
@@ -248,21 +233,10 @@ img {
 }
 
 .hero-title {
-  font-size: clamp(2.6rem, 4vw, 3.6rem);
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  margin-bottom: 0.3rem;
-}
-
-.hero-subtitle {
-  font-size: 1.2rem;
-  color: #e5e7eb;
-  margin-bottom: 1rem;
-}
-
-/* Hero content */
-.hero-content {
-  max-width: 560px;
+  margin-bottom: 0.6rem;
 }
 
 .hero-lead {
@@ -278,19 +252,13 @@ img {
   margin-bottom: 1rem;
 }
 
-.hero-note {
-  font-size: 0.9rem;
-  color: #e5e7eb;
-  margin-bottom: 0.9rem;
-}
-
 .hero-badges {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0.7rem;
 }
 
 .hero-badges li {
@@ -302,7 +270,71 @@ img {
   background: rgba(15, 23, 42, 0.9);
 }
 
-/* Buttons */
+.hero-note {
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-info-card {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: var(--shadow-soft);
+  padding: 1.4rem 1.3rem;
+  max-width: 360px;
+}
+
+.hero-info-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.hero-info-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.9rem;
+}
+
+.hero-info-contact {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
+.hero-phone-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #93c5fd;
+}
+
+.hero-phone-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e0f2fe;
+  text-decoration: none;
+}
+
+.hero-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+}
+
+.hero-info-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* BUTTONS */
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -351,9 +383,7 @@ img {
   border-color: var(--accent);
 }
 
-/* =========================
-   SEKSJON: TJENESTER
-========================= */
+/* SECTIONS */
 
 .section {
   padding: 2.8rem 0 2.6rem;
@@ -369,24 +399,17 @@ img {
   font-size: 1rem;
 }
 
-.section-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
+/* Tjenester */
+
+.section-services {
+  background: radial-gradient(circle at top, #020617 0, #020617 45%, #020617 100%);
 }
 
-.services-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
-  gap: 1.6rem;
-  align-items: stretch;
-}
-
-/* Grid med kort */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  margin-top: 1.4rem;
 }
 
 .service-card {
@@ -407,8 +430,40 @@ img {
   color: var(--text-soft);
 }
 
-/* Sideblokk med bilde + tekst */
-.services-aside {
+/* Hvorfor velge oss */
+
+.section-why {
+  background: #020617;
+}
+
+.why-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+  gap: 1.8rem;
+  align-items: stretch;
+}
+
+.why-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+
+.why-list li + li {
+  margin-top: 0.9rem;
+}
+
+.why-list h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.why-list p {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+.why-aside {
   background: rgba(15, 23, 42, 0.96);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(148, 163, 184, 0.4);
@@ -419,31 +474,106 @@ img {
   gap: 0.8rem;
 }
 
-.services-image {
+.why-image {
   border-radius: var(--radius-md);
   overflow: hidden;
 }
 
-.services-image img {
+.why-image img {
   width: 100%;
-  height: auto;
+  height: 260px;
   object-fit: cover;
 }
 
-.services-aside-text h3 {
+.why-aside-card h3 {
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
 }
 
-.services-aside-text p {
+.why-aside-card p {
   font-size: 0.9rem;
   color: var(--text-muted);
   margin-bottom: 0.8rem;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* Prosess */
+
+.section-process {
+  background: radial-gradient(circle at top, #020617 0, #020617 45%, #020617 100%);
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.process-step {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: var(--shadow-subtle);
+}
+
+.process-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: #e0f2fe;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.process-step h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.process-step p {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
+/* CTA */
+
+.section-cta {
+  background: #020617;
+  border-top: 1px solid rgba(148, 163, 184, 0.25);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+.cta-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cta-text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.cta-text p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+/* FOOTER */
 
 .site-footer {
   border-top: 1px solid rgba(148, 163, 184, 0.25);
@@ -467,9 +597,7 @@ img {
   text-decoration: none;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width: 960px) {
   .hero-inner {
@@ -477,13 +605,16 @@ img {
     gap: 2rem;
   }
 
-  .hero-brand,
-  .hero-content {
-    max-width: 100%;
+  .hero-right {
+    justify-content: flex-start;
   }
 
-  .services-layout {
+  .why-layout {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -536,6 +667,10 @@ img {
   }
 
   .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .process-steps {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -553,5 +688,9 @@ img {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .services-grid {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
