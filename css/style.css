@@ -749,6 +749,74 @@ img {
   color: var(--text-soft);
   font-size: 0.95rem;
 }
+/* =========================
+   TJENESTER – PAGE LAYOUT
+========================= */
+
+.services-section {
+  padding: 3rem 0 3rem;
+}
+
+.services-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.services-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+.services-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+}
+
+.services-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.services-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.services-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4rem;
+}
+
+.services-list li {
+  margin-bottom: 1.2rem;
+}
+
+.services-list h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.services-list p {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+  .services-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .services-image img {
+    height: 260px;
+  }
+}
 
 /* Mobil */
 @media (max-width: 768px) {
