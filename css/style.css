@@ -8,7 +8,6 @@
 
   --bg-body: #020617;
   --bg-elevated: #020617;
-  --bg-soft: #020617;
 
   --text-main: #e5e7eb;
   --text-muted: #9ca3af;
@@ -209,7 +208,7 @@ img {
   display: flex;
   align-items: center;
   padding: 3.5rem 0 3rem;
-  background-image: url("../img/hero-bg.jpg"); /* BYTT TIL DITT BILDE */
+  background-image: url("../img/hero-rorlegger.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -341,6 +340,17 @@ img {
   border-color: var(--accent);
 }
 
+.btn-ghost {
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--text-main);
+  border-color: rgba(148, 163, 184, 0.5);
+}
+
+.btn-ghost:hover {
+  background: rgba(15, 23, 42, 1);
+  border-color: var(--accent);
+}
+
 /* =========================
    SEKSJON: TJENESTER
 ========================= */
@@ -359,11 +369,24 @@ img {
   font-size: 1rem;
 }
 
+.section-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.services-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+  gap: 1.6rem;
+  align-items: stretch;
+}
+
+/* Grid med kort */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.4rem;
 }
 
 .service-card {
@@ -382,6 +405,40 @@ img {
 .service-card p {
   font-size: 0.9rem;
   color: var(--text-soft);
+}
+
+/* Sideblokk med bilde + tekst */
+.services-aside {
+  background: rgba(15, 23, 42, 0.96);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: var(--shadow-soft);
+  padding: 1rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 0.8rem;
+}
+
+.services-image {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.services-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.services-aside-text h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.services-aside-text p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
 }
 
 /* =========================
@@ -423,6 +480,10 @@ img {
   .hero-brand,
   .hero-content {
     max-width: 100%;
+  }
+
+  .services-layout {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -474,13 +535,8 @@ img {
     text-align: left;
   }
 
-  .hero-brand,
-  .hero-content {
-    max-width: 100%;
-  }
-
   .services-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .footer-inner {
@@ -497,9 +553,5 @@ img {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .services-grid {
-    grid-template-columns: minmax(0, 1fr);
   }
 }
