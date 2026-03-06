@@ -1,17 +1,15 @@
-<!DOCTYPE html>
+xv<!DOCTYPE html>
 <html lang="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Kontakt oss — Rørlegger Vest AS</title>
-
-  <base href="/r-rlegger-demo/">
-  <link rel="preload" as="style" href="css/style.css">
+  <title>Kontakt oss – Rørlegger Vest AS</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Kontakt Rørlegger Vest AS — ring ved akutt lekkasje eller fyll ut kontaktskjema for befaring.">
 </head>
 <body>
- <header class="site-header">
+
+<!-- HEADER -->
+<header class="site-header">
   <div class="container header-inner">
     <div class="logo">
       <div class="logo-mark">RV</div>
@@ -38,91 +36,81 @@
   </div>
 </header>
 
-  <main>
-    <section class="hero" aria-labelledby="kontakt-tittel">
-      <div class="container" style="display:grid;grid-template-columns:1fr;gap:1rem">
-        <div class="hero-content">
-          <h1 id="kontakt-tittel">Kontakt oss</h1>
-          <p style="color:var(--muted)">Ring ved akutt lekkasje eller fyll ut skjemaet for befaring. Merk felt med *.</p>
+<main>
 
-          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1rem">
-            <a href="tel:+4799999999" class="btn btn-primary">Ring oss: 99 99 99 99</a>
-            <a href="mailto:post@rorleggervest.no" class="btn btn-secondary">Send e-post</a>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <p class="page-hero-kicker">Kontakt oss</p>
+    <h1 class="page-hero-title">Vi hjelper deg – raskt og enkelt</h1>
+    <p class="page-hero-text">
+      Ring oss direkte eller send en melding. Vi svarer så fort vi kan og gir en ærlig vurdering av jobben.
+    </p>
+  </div>
+</section>
 
-    <section class="services-preview container" aria-labelledby="skjema-tittel" style="margin-top:1.25rem">
-      <h2 id="skjema-tittel">Send oss en melding</h2>
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container contact-layout">
 
-      <form id="contact-form" method="POST" action="https://formspree.io/f/your-form-id" style="display:grid;gap:0.75rem;max-width:720px">
-        <label for="navn">Navn *</label>
-        <input id="navn" type="text" name="navn" required placeholder="Fornavn Etternavn" />
+    <div class="contact-info">
+      <h2>Kontaktinformasjon</h2>
+      <p>Du kan nå oss hele dagen – vi svarer raskt.</p>
 
-        <label for="telefon">Telefon *</label>
-        <input id="telefon" type="tel" name="telefon" required placeholder="99 99 99 99" pattern="[0-9+\s\-()]{6,}" />
-
-        <label for="epost">E-post *</label>
-        <input id="epost" type="email" name="epost" required placeholder="navn@eksempel.no" />
-
-        <label for="emne">Emne</label>
-        <input id="emne" type="text" name="emne" placeholder="Kort emne (f.eks. lekkasje i kjeller)" />
-
-        <label for="melding">Melding *</label>
-        <textarea id="melding" name="melding" rows="6" required placeholder="Beskriv problemet eller hva du ønsker hjelp med"></textarea>
-
-        <label style="display:flex;gap:0.6rem;align-items:center">
-          <input type="checkbox" name="akutt" value="ja" />
-          <span>Merk som akutt (prioriteres)</span>
-        </label>
-
-        <div style="display:flex;gap:0.6rem;flex-wrap:wrap">
-          <button type="submit" class="btn btn-primary">Send melding</button>
-          <button type="reset" class="btn btn-secondary" style="background:transparent;border:1px solid rgba(255,255,255,0.06)">Tøm skjema</button>
-        </div>
-
-        <p style="color:var(--muted);font-size:0.95rem;margin-top:0.4rem">
-          Bytt ut action‑attributtet med din Formspree‑URL eller backend‑endpoint for å aktivere sending.
-        </p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <p>© 2026 Rørlegger Vest AS · Telefon: <a href="tel:+4799999999" style="color:var(--accent)">99 99 99 99</a></p>
-      <p class="footer-contact" style="color:var(--muted)">post@rorleggervest.no</p>
+      <ul class="contact-list">
+        <li><strong>Telefon:</strong> <a href="tel:+4799999999">99 99 99 99</a></li>
+        <li><strong>E‑post:</strong> <a href="mailto:post@rorleggervest.no">post@rorleggervest.no</a></li>
+        <li><strong>Adresse:</strong> Bergen, Vestland</li>
+      </ul>
     </div>
-  </footer>
 
-  <script>
-    (function(){
-      const btn = document.getElementById('nav-button');
-      const nav = document.getElementById('main-nav');
-      if(!btn || !nav) return;
-      btn.addEventListener('click', function(){
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        nav.classList.toggle('open');
-      });
-      nav.addEventListener('click', function(e){
-        if(e.target.tagName === 'A' && nav.classList.contains('open')){
-          nav.classList.remove('open');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
+    <div class="contact-form">
+      <h2>Send forespørsel</h2>
+      <form>
+        <input type="text" placeholder="Navn" required>
+        <input type="email" placeholder="E‑post" required>
+        <input type="text" placeholder="Telefon" required>
+        <textarea placeholder="Hva gjelder det?" rows="5" required></textarea>
+        <button class="btn btn-primary" type="submit">Send melding</button>
+      </form>
+    </div>
 
-      const form = document.getElementById('contact-form');
-      if(!form) return;
-      form.addEventListener('submit', function(e){
-        const action = form.getAttribute('action') || '';
-        if(action.trim() === '' || action.includes('your-form-id')){
-          e.preventDefault();
-          alert('Skjemaet er klart. Bytt ut action‑attributtet med din form‑endpoint for å sende meldinger.');
-        }
-      });
-    })();
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Rørlegger Vest AS</p>
+    <p>Telefon: <a href="tel:+4799999999">99 99 99 99</a> · E‑post: <a href="mailto:post@rorleggervest.no">post@rorleggervest.no</a></p>
+  </div>
+</footer>
+
+<!-- SCRIPT (MENY SOM FUNKER) -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("nav-button");
+  const nav = document.getElementById("main-nav");
+
+  if (!btn || !nav) return;
+
+  btn.addEventListener("click", () => {
+    nav.classList.toggle("open");
+  });
+
+  nav.addEventListener("click", (e) => {
+    if (e.target.tagName === "A") {
+      nav.classList.remove("open");
+    }
+  });
+});
+</script>
+
+</body>
+</html>
+
   </script>
   <script>
 (function(){
