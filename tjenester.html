@@ -3,119 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Våre tjenester — Rørlegger Vest AS</title>
-
-  <base href="/r-rlegger-demo/">
-  <link rel="preload" as="image" href="img/service-ror.jpg">
-  <link rel="preload" as="style" href="css/style.css">
+  <title>Våre tjenester – Rørlegger Vest AS</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="Tjenester fra Rørlegger Vest AS — akutte lekkasjer, bad, varme, drenering og serviceavtaler.">
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem">
-      <div class="logo" aria-label="Rørlegger Vest AS logo">
-        <span class="logo-mark">RV</span>
-        <span class="logo-text">Rørlegger Vest AS</span>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">RV</div>
+      <div class="logo-text">
+        <span class="logo-name">Rørlegger Vest AS</span>
+        <span class="logo-tagline">Rørlegger i Bergen 24/7</span>
       </div>
-
-      <button id="nav-button" class="nav-toggle-label" aria-controls="main-nav" aria-expanded="false" aria-label="Åpne meny">
-        <span></span>
-      </button>
-
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hovedmeny">
-        <ul>
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="om-oss.html">Om oss</a></li>
-          <li><a href="tjenester.html" class="active">Våre tjenester</a></li>
-          <li><a href="kontakt-oss.html" class="cta-link">Kontakt oss</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
 
-  <main>
-    <section class="hero" aria-labelledby="tjenester-tittel">
-      <div class="container" style="display:grid;grid-template-columns:1fr;gap:1rem">
-        <div class="hero-content">
-          <h1 id="tjenester-tittel">Våre tjenester</h1>
-          <p style="color:var(--muted)">Fullt spekter av rørleggertjenester for privat og næring. Vi leverer dokumentasjon og garanti.</p>
+    <button id="nav-button" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">
+      <span></span><span></span>
+    </button>
 
-          <div style="display:flex;gap:0.6rem;flex-wrap:wrap;margin-top:1rem">
-            <a href="kontakt-oss.html" class="btn btn-primary">Be om gratis befaring</a>
-            <a href="#priser" class="btn btn-secondary">Se priseksempler</a>
-          </div>
-        </div>
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="tjenester.html" class="active">Våre tjenester</a></li>
+        <li><a href="kontakt-oss.html" class="nav-cta">Kontakt oss</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <div class="hero-image" aria-hidden="false">
-          <img
-            src="img/service-ror.jpg"
-            srcset="img/service-ror-800.jpg 800w, img/service-ror.jpg 1600w"
-            sizes="(max-width:720px) 100vw, 520px"
-            loading="lazy"
-            alt="Utvendig rørinstallasjon"
-          >
-        </div>
-      </div>
-    </section>
+<main>
 
-    <section class="services-preview container" aria-labelledby="hovedtjenester" style="margin-top:1.25rem">
-      <h2 id="hovedtjenester">Hovedtjenester</h2>
-      <div class="services-grid" style="margin-top:1rem">
-        <article class="service-card"><h3>Akutte lekkasjer</h3><p style="color:var(--muted)">Utrykning, midlertidig tetting og utbedring.</p></article>
-        <article class="service-card"><h3>Bad og våtrom</h3><p style="color:var(--muted)">Komplett rørleggerarbeid ved oppussing og nybygg.</p></article>
-        <article class="service-card"><h3>Varme og energi</h3><p style="color:var(--muted)">Gulvvarme, varmepumper og energieffektiv rådgivning.</p></article>
-        <article class="service-card"><h3>Service og vedlikehold</h3><p style="color:var(--muted)">Faste avtaler for bedrifter og borettslag.</p></article>
-        <article class="service-card"><h3>Drenering og utendørs</h3><p style="color:var(--muted)">Drenering, avløp og frost­sikring.</p></article>
-        <article class="service-card"><h3>Rehabilitering</h3><p style="color:var(--muted)">Utskifting av gamle rør og komplette rehabiliteringsprosjekter.</p></article>
-      </div>
-    </section>
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <p class="page-hero-kicker">Våre tjenester</p>
+    <h1 class="page-hero-title">Alt innen rør, varme og sanitær</h1>
+    <p class="page-hero-text">
+      Vi hjelper både privatpersoner, bedrifter og borettslag med alt fra akutte lekkasjer til
+      komplette baderom. Her får du fagfolk som møter opp, jobber ryddig og leverer kvalitet.
+    </p>
+  </div>
+</section>
 
-    <section class="services-preview container" id="priser" aria-labelledby="priser-tittel" style="margin-top:1.25rem">
-      <h2 id="priser-tittel">Priseksempler (veiledende)</h2>
-      <div style="display:grid;grid-template-columns:1fr;gap:0.75rem;margin-top:0.75rem">
-        <div class="service-card"><strong>Utrykning lekkasje</strong><p style="color:var(--muted);margin:0.4rem 0 0 0">Fra <strong>kr 1 450</strong> per time.</p></div>
-        <div class="service-card"><strong>Montering av servant</strong><p style="color:var(--muted);margin:0.4rem 0 0 0">Fra <strong>kr 2 900</strong>.</p></div>
-        <div class="service-card"><strong>Komplett baderomsinstallasjon</strong><p style="color:var(--muted);margin:0.4rem 0 0 0">Eksempel: mindre bad fra <strong>kr 45 000</strong>.</p></div>
-      </div>
-    </section>
+<section class="services-section">
+  <div class="container services-layout">
 
-    <section class="services-preview container" style="margin-top:1.25rem;margin-bottom:2rem">
-      <h2>Trenger du hjelp nå?</h2>
-      <p style="color:var(--muted)">For akutte saker ring 99 99 99 99 eller bruk kontaktskjemaet.</p>
-      <div style="display:flex;gap:0.6rem;margin-top:0.6rem">
-        <a href="kontakt-oss.html" class="btn btn-primary">Kontakt oss nå</a>
-        <a href="kontakt-oss.html#befaring" class="btn btn-secondary">Be om befaring</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <p>© 2026 Rørlegger Vest AS · Telefon: <a href="tel:+4799999999" style="color:var(--accent)">99 99 99 99</a></p>
-      <p class="footer-contact" style="color:var(--muted)">post@rorleggervest.no</p>
+    <div class="services-image">
+      <img src="img/tjenester-vask.jpg" alt="Ny montert vask">
     </div>
-  </footer>
 
-  <script>
-    (function(){
-      const btn = document.getElementById('nav-button');
-      const nav = document.getElementById('main-nav');
-      if(!btn || !nav) return;
-      btn.addEventListener('click', function(){
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        nav.classList.toggle('open');
-      });
-      nav.addEventListener('click', function(e){
-        if(e.target.tagName === 'A' && nav.classList.contains('open')){
-          nav.classList.remove('open');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    })();
-  </script>
-  <script>
+    <div class="services-text">
+      <h2>Hva vi tilbyr</h2>
+      <p>
+        Vi dekker alle vanlige rørleggertjenester – fra små reparasjoner til større prosjekter.
+        Under finner du en oversikt over det vi gjør mest av.
+      </p>
+
+      <ul class="services-list">
+
+        <li>
+          <h3>Akutte lekkasjer</h3>
+          <p>Rask utrykning, midlertidig sikring og varig reparasjon. Vi begrenser skadene og gir råd videre.</p>
+        </li>
+
+        <li>
+          <h3>Tette rør og avløp</h3>
+          <p>Rens av tette sluk, avløp og rør. Vi bruker riktig utstyr og sørger for god gjennomstrømning.</p>
+        </li>
+
+        <li>
+          <h3>Montering av vask, toalett og armatur</h3>
+          <p>Vi monterer og bytter alt av sanitærutstyr – riktig, tett og etter forskriftene.</p>
+        </li>
+
+        <li>
+          <h3>Bad og våtrom</h3>
+          <p>Komplett rørleggerarbeid ved oppussing og nybygg. Vi samarbeider med andre fag ved behov.</p>
+        </li>
+
+        <li>
+          <h3>Varmtvannsberedere</h3>
+          <p>Bytte, reparasjon og feilsøking. Vi sørger for trygg installasjon og riktig dimensjonering.</p>
+        </li>
+
+        <li>
+          <h3>Gulvvarme og varmeanlegg</h3>
+          <p>Installasjon, service og feilsøking på vannbåren varme og energiløsninger.</p>
+        </li>
+
+        <li>
+          <h3>Serviceavtaler</h3>
+          <p>For bedrifter, borettslag og sameier. Vi sørger for at anleggene fungerer som de skal.</p>
+        </li>
+
+        <li>
+          <h3>Rørinspeksjon og feilsøking</h3>
+          <p>Kamera, trykktesting og profesjonell vurdering av rør og avløp.</p>
+        </li>
+
+      </ul>
+
+      <a href="kontakt-oss.html" class="btn btn-primary">Be om pris eller befaring</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© 2026 Rørlegger Vest AS</p>
+    <p>Telefon: <a href="tel:+4799999999">99 99 99 99</a> · E‑post: <a href="mailto:post@rorleggervest.no">post@rorleggervest.no</a></p>
+  </div>
+</footer>
+
+<script>
 (function(){
   const btn = document.getElementById('nav-button');
   const nav = document.getElementById('main-nav');
