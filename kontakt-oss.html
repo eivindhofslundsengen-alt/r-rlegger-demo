@@ -11,27 +11,32 @@
   <meta name="description" content="Kontakt Rørlegger Vest AS — ring ved akutt lekkasje eller fyll ut kontaktskjema for befaring.">
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem">
-      <div class="logo" aria-label="Rørlegger Vest AS logo">
-        <span class="logo-mark">RV</span>
-        <span class="logo-text">Rørlegger Vest AS</span>
+ <header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <div class="logo-mark">RV</div>
+      <div class="logo-text">
+        <span class="logo-name">Rørlegger Vest AS</span>
+        <span class="logo-tagline">Rørlegger i Bergen 24/7</span>
       </div>
-
-      <button id="nav-button" class="nav-toggle-label" aria-controls="main-nav" aria-expanded="false" aria-label="Åpne meny">
-        <span></span>
-      </button>
-
-      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Hovedmeny">
-        <ul>
-          <li><a href="index.html">Hjem</a></li>
-          <li><a href="om-oss.html">Om oss</a></li>
-          <li><a href="tjenester.html">Våre tjenester</a></li>
-          <li><a href="kontakt-oss.html" class="active cta-link">Kontakt oss</a></li>
-        </ul>
-      </nav>
     </div>
-  </header>
+
+    <button id="nav-button" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="main-nav" class="main-nav">
+      <ul>
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="tjenester.html">Våre tjenester</a></li>
+        <li><a href="kontakt-oss.html" class="active nav-cta">Kontakt oss</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
   <main>
     <section class="hero" aria-labelledby="kontakt-tittel">
