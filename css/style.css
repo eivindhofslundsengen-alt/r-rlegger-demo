@@ -816,10 +816,7 @@ img {
   .services-image img {
     height: 260px;
   }
-}
 
-/* Mobil */
-@media (max-width: 768px) {
   .about-layout {
     grid-template-columns: minmax(0, 1fr);
   }
