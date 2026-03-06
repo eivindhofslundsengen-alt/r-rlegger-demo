@@ -1,148 +1,141 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rørlegger Vest AS – Profesjonell rørlegger i ditt nærområde</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rørlegger Vest AS — Trygge rør, trygt hjem</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Rørlegger Vest AS — din lokale rørlegger for lekkasjer, bad, varme og service. Rask utrykning og ryddig arbeid.">
 </head>
 <body>
-    <header class="site-header">
-        <div class="logo">
-            <span class="logo-mark">RV</span>
-            <span class="logo-text">Rørlegger Vest AS</span>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-mark">RV</div>
+        <div class="logo-text">
+          <span class="logo-name">Rørlegger Vest AS</span>
+          <span class="logo-tagline">Trygge rør, trygt hjem</span>
+        </div>
+      </div>
+
+      <button id="nav-button" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Åpne meny">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Hovedmeny">
+        <ul>
+          <li><a href="index.html" class="active">Hjem</a></li>
+          <li><a href="om-oss.html">Om oss</a></li>
+          <li><a href="tjenester.html">Våre tjenester</a></li>
+          <li><a href="kontakt-oss.html" class="nav-cta">Kontakt oss</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-brand">
+          <p class="hero-kicker">Døgnvakt · Bergen og omegn</p>
+          <h1 class="hero-title">Rørlegger Vest AS</h1>
+          <p class="hero-subtitle">Trygge rør, trygt hjem.</p>
         </div>
 
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
+        <div class="hero-content">
+          <p class="hero-lead">
+            Vi er din lokale rørlegger med fokus på kvalitet, punktlighet og ryddig arbeid.
+            Enten det er lekkasje, oppussing eller nyinstallasjon – vi fikser det.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:+4799999999" class="btn btn-primary">Ring nå: 99 99 99 99</a>
+            <a href="tjenester.html" class="btn btn-secondary">Se våre tjenester</a>
+          </div>
+          <p class="hero-note">Døgnvakt ved akutte lekkasjer – vi er der når du trenger oss.</p>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html" class="active">Hjem</a></li>
-                <li><a href="om-oss.html">Om oss</a></li>
-                <li><a href="tjenester.html">Våre tjenester</a></li>
-                <li><a href="kontakt-oss.html" class="cta-link">Kontakt oss</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- HERO-SEKSJON -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Trygge rør, trygt hjem.</h1>
-                <p>
-                    Vi er din lokale rørlegger med fokus på kvalitet, punktlighet og ryddig arbeid.
-                    Enten det er lekkasje, oppussing eller nyinstallasjon – vi fikser det.
-                </p>
-                <div class="hero-actions">
-                    <a href="kontakt-oss.html" class="btn btn-primary">Kontakt oss nå</a>
-                    <a href="tjenester.html" class="btn btn-secondary">Se våre tjenester</a>
-                </div>
-                <p class="hero-subtext">
-                    Døgnvakt ved akutte lekkasjer – vi er der når du trenger oss.
-                </p>
-            </div>
-            <div class="hero-image">
-                <img src="img/hero-rorlegger.jpg" alt="Rørlegger med rør og verktøy">
-            </div>
-        </section>
-
-        <!-- KORTE TJENESTER -->
-        <section class="services-preview">
-            <div class="section-header">
-                <h2>Hva vi kan hjelpe deg med</h2>
-                <p>Fra små reparasjoner til komplette røranlegg – vi tar jobben på alvor.</p>
-            </div>
-
-            <div class="services-grid">
-                <article class="service-card">
-                    <h3>Akutte lekkasjer</h3>
-                    <p>
-                        Rask utrykning ved vannlekkasje, tette rør og andre akutte problemer.
-                        Vi begrenser skadene og finner årsaken.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <h3>Bad og våtrom</h3>
-                    <p>
-                        Komplett rørleggerarbeid ved oppussing og nybygg. Vi samarbeider gjerne
-                        med andre håndverkere på prosjektet ditt.
-                    </p>
-                </article>
-
-                <article class="service-card">
-                    <h3>Varme og energi</h3>
-                    <p>
-                        Varmepumper, gulvvarme og energieffektive løsninger som gir deg et
-                        behagelig inneklima året rundt.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <!-- BILDESEKSJON MED RØR UTE -->
-        <section class="image-strip">
-            <div class="image-strip-image">
-                <img src="img/service-ror.jpg" alt="Rørinstallasjon utendørs">
-            </div>
-            <div class="image-strip-content">
-                <h2>Solid håndverk – ute og inne</h2>
-                <p>
-                    Vi tar oss av både innvendige og utvendige rørinstallasjoner. Enten det gjelder
-                    vann, avløp eller drenering, sørger vi for løsninger som varer.
-                </p>
-                <a href="om-oss.html" class="text-link">Les mer om oss</a>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <p>© 2026 Rørlegger Vest AS. Alle rettigheter reservert.</p>
-            <p class="footer-contact">
-                Org.nr 999 999 999 · Telefon: 99 99 99 99 · E-post: post@rorleggervest.no
-            </p>
+          <ul class="hero-badges">
+            <li>Godkjent mesterbedrift</li>
+            <li>Rask utrykning</li>
+            <li>Fast kontaktperson</li>
+          </ul>
         </div>
-    </footer>
-    <script>
-(function(){
-  const btn = document.getElementById('nav-button');
-  const nav = document.getElementById('main-nav');
-  if(!btn || !nav) return;
+      </div>
+    </section>
 
-  function setOpen(open){
-    nav.classList.toggle('open', open);
-    btn.setAttribute('aria-expanded', String(open));
-  }
+    <!-- TJENESTER-TEASER -->
+    <section class="section section-services">
+      <div class="container">
+        <header class="section-header">
+          <h2>Hva vi kan hjelpe deg med</h2>
+          <p>Fra små reparasjoner til komplette røranlegg – vi tar jobben på alvor.</p>
+        </header>
 
-  btn.addEventListener('click', function(){
-    const isOpen = nav.classList.contains('open');
-    setOpen(!isOpen);
-  });
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Akutte lekkasjer</h3>
+            <p>Rask utrykning, midlertidig sikring og varig utbedring.</p>
+          </article>
+          <article class="service-card">
+            <h3>Bad og våtrom</h3>
+            <p>Komplett rørleggerarbeid ved oppussing og nybygg.</p>
+          </article>
+          <article class="service-card">
+            <h3>Varme og energi</h3>
+            <p>Gulvvarme, varmepumper og energieffektive løsninger.</p>
+          </article>
+          <article class="service-card">
+            <h3>Service og vedlikehold</h3>
+            <p>Faste avtaler for bedrifter, borettslag og sameier.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  nav.addEventListener('click', function(e){
-    if(e.target.tagName === 'A' && nav.classList.contains('open')){
-      setOpen(false);
-    }
-  });
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Rørlegger Vest AS</p>
+      <p>Telefon: <a href="tel:+4799999999">99 99 99 99</a> · E‑post: <a href="mailto:post@rorleggervest.no">post@rorleggervest.no</a></p>
+    </div>
+  </footer>
 
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape' && nav.classList.contains('open')){
-      setOpen(false);
-    }
-  });
+  <script>
+    (function(){
+      const btn = document.getElementById('nav-button');
+      const nav = document.getElementById('main-nav');
+      if(!btn || !nav) return;
 
-  window.addEventListener('resize', function(){
-    if(window.innerWidth > 768 && nav.classList.contains('open')){
-      setOpen(false);
-    }
-  });
-})();
-</script>
+      function setOpen(open){
+        nav.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', String(open));
+      }
 
+      btn.addEventListener('click', function(){
+        const isOpen = nav.classList.contains('open');
+        setOpen(!isOpen);
+      });
+
+      nav.addEventListener('click', function(e){
+        if(e.target.tagName === 'A' && nav.classList.contains('open')){
+          setOpen(false);
+        }
+      });
+
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape' && nav.classList.contains('open')){
+          setOpen(false);
+        }
+      });
+
+      window.addEventListener('resize', function(){
+        if(window.innerWidth > 768 && nav.classList.contains('open')){
+          setOpen(false);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
