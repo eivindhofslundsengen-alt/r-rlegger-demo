@@ -948,4 +948,15 @@ img {
     display: inline-flex !important;
   }
 }
+/* Scroll animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
