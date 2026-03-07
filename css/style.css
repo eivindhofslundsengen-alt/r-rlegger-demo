@@ -894,3 +894,14 @@ img {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* Skjul menyknappen på PC */
+.nav-toggle {
+  display: none;
+}
+
+/* Vis menyknappen kun på mobil */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+}
