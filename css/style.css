@@ -164,7 +164,7 @@ img {
 }
 
 .nav-toggle {
-  display: inline-flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   gap: 5px;
