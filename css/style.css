@@ -422,6 +422,12 @@ img {
   transform: translateY(0) scale(1);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
 }
+.service-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 22px 50px rgba(15, 23, 42, 0.9);
+  border-color: var(--accent);
+  background: rgba(15, 23, 42, 0.98);
+}
 
 }
 
