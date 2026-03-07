@@ -894,14 +894,15 @@ img {
     grid-template-columns: minmax(0, 1fr);
   }
 }
-/* Skjul menyknappen på PC */
+/* Skjul hamburger på PC */
 .nav-toggle {
-  display: none;
+  display: none !important;
 }
 
-/* Vis menyknappen kun på mobil */
+/* Vis hamburger kun på mobil */
 @media (max-width: 768px) {
   .nav-toggle {
-    display: inline-flex;
+    display: inline-flex !important;
   }
 }
+
