@@ -419,6 +419,10 @@ img {
   padding: 0.9rem 1rem;
   border: 1px solid rgba(148, 163, 184, 0.4);
   box-shadow: var(--shadow-subtle);
+  transform: translateY(0) scale(1);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
 }
 
 .service-card h3 {
