@@ -35,79 +35,54 @@
 
 <main>
 
-<section class="page-hero">
+<section class="page-hero fade-up">
   <div class="container page-hero-inner">
+    <img src="img/tjenester-verktøy.jpg" alt="Skitne rørleggertenger" class="hero-image">
     <p class="page-hero-kicker">Våre tjenester</p>
-    <h1 class="page-hero-title">Alt innen rør, varme og sanitær</h1>
+    <h1 class="page-hero-title">Rørleggertjenester med presisjon og erfaring</h1>
     <p class="page-hero-text">
-      Vi hjelper både privatpersoner, bedrifter og borettslag med alt fra akutte lekkasjer til
-      komplette baderom. Her får du fagfolk som møter opp, jobber ryddig og leverer kvalitet.
+      Vi hjelper både privatpersoner, bedrifter og borettslag med alt innen vann, varme og sanitær.
+      Her er våre mest etterspurte tjenester – klikk for å lese mer.
     </p>
   </div>
 </section>
 
-<section class="services-section">
-  <div class="container services-layout">
+<section class="services-grid container fade-up">
+  <a href="#" class="service-card">
+    <i class="icon-leak"></i>
+    <h3>Akutte lekkasjer</h3>
+    <p>Rask utrykning, midlertidig sikring og varig utbedring. Vi begrenser skadene og tar dialogen videre.</p>
+  </a>
 
-    <div class="services-image">
-      <img src="img/tjenester-vask.jpg" alt="Ny montert vask">
-    </div>
+  <a href="#" class="service-card">
+    <i class="icon-pipe"></i>
+    <h3>Tette rør og avløp</h3>
+    <p>Rens av tette sluk, avløp og rør. Vi bruker riktig utstyr og sørger for at vannet renner som det skal.</p>
+  </a>
 
-    <div class="services-text">
-      <h2>Hva vi tilbyr</h2>
-      <p>
-        Vi dekker alle vanlige rørleggertjenester – fra små reparasjoner til større prosjekter.
-        Under finner du en oversikt over det vi gjør mest av.
-      </p>
+  <a href="#" class="service-card">
+    <i class="icon-sink"></i>
+    <h3>Montering av vask og armatur</h3>
+    <p>Vi monterer og bytter alt av sanitærutstyr – riktig, tett og etter forskriftene.</p>
+  </a>
 
-      <ul class="services-list">
+  <a href="#" class="service-card">
+    <i class="icon-bathroom"></i>
+    <h3>Bad og våtrom</h3>
+    <p>Komplett rørleggerarbeid ved oppussing og nybygg. Vi jobber ryddig og koordinert med andre fag.</p>
+  </a>
 
-        <li>
-          <h3>Akutte lekkasjer</h3>
-          <p>Rask utrykning, midlertidig sikring og varig reparasjon. Vi begrenser skadene og gir råd videre.</p>
-        </li>
+  <a href="#" class="service-card">
+    <i class="icon-heater"></i>
+    <h3>Varmtvannsberedere</h3>
+    <p>Bytte, reparasjon og feilsøking. Vi sørger for trygg installasjon og riktig dimensjonering.</p>
+  </a>
 
-        <li>
-          <h3>Tette rør og avløp</h3>
-          <p>Rens av tette sluk, avløp og rør. Vi bruker riktig utstyr og sørger for god gjennomstrømning.</p>
-        </li>
-
-        <li>
-          <h3>Montering av vask, toalett og armatur</h3>
-          <p>Vi monterer og bytter alt av sanitærutstyr – riktig, tett og etter forskriftene.</p>
-        </li>
-
-        <li>
-          <h3>Bad og våtrom</h3>
-          <p>Komplett rørleggerarbeid ved oppussing og nybygg. Vi samarbeider med andre fag ved behov.</p>
-        </li>
-
-        <li>
-          <h3>Varmtvannsberedere</h3>
-          <p>Bytte, reparasjon og feilsøking. Vi sørger for trygg installasjon og riktig dimensjonering.</p>
-        </li>
-
-        <li>
-          <h3>Gulvvarme og varmeanlegg</h3>
-          <p>Installasjon, service og feilsøking på vannbåren varme og energiløsninger.</p>
-        </li>
-
-        <li>
-          <h3>Serviceavtaler</h3>
-          <p>For bedrifter, borettslag og sameier. Vi sørger for at anleggene fungerer som de skal.</p>
-        </li>
-
-        <li>
-          <h3>Rørinspeksjon og feilsøking</h3>
-          <p>Kamera, trykktesting og profesjonell vurdering av rør og avløp.</p>
-        </li>
-
-      </ul>
-
-      <a href="kontakt-oss.html" class="btn btn-primary">Be om pris eller befaring</a>
-    </div>
-
-  </div>
+  <a href="#" class="service-card">
+    <i class="icon-energy"></i>
+    <h3>Varme og energi</h3>
+    <p>Gulvvarme, varmepumper og energieffektive løsninger som gir jevn varme og lavere strømforbruk.</p>
+  </a>
 </section>
 
 </main>
@@ -120,39 +95,17 @@
 </footer>
 
 <script>
-(function(){
-  const btn = document.getElementById('nav-button');
-  const nav = document.getElementById('main-nav');
-  if(!btn || !nav) return;
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
 
-  function setOpen(open){
-    nav.classList.toggle('open', open);
-    btn.setAttribute('aria-expanded', String(open));
-  }
-
-  btn.addEventListener('click', function(){
-    const isOpen = nav.classList.contains('open');
-    setOpen(!isOpen);
-  });
-
-  nav.addEventListener('click', function(e){
-    if(e.target.tagName === 'A' && nav.classList.contains('open')){
-      setOpen(false);
-    }
-  });
-
-  document.addEventListener('keydown', function(e){
-    if(e.key === 'Escape' && nav.classList.contains('open')){
-      setOpen(false);
-    }
-  });
-
-  window.addEventListener('resize', function(){
-    if(window.innerWidth > 768 && nav.classList.contains('open')){
-      setOpen(false);
-    }
-  });
-})();
+  document.querySelectorAll(".fade-up").forEach(el => observer.observe(el));
+});
 </script>
 
 </body>
