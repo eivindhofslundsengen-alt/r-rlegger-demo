@@ -1071,3 +1071,26 @@ img {
 .service-card p {
   color: #333 !important;
 }
+.service-card {
+  background: #f8f8f8 !important; /* myk grå, ikke hvit */
+  color: #1a1a1a !important;
+  border: 1px solid #e5e5e5 !important;
+  border-radius: 8px;
+  padding: 20px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* subtil dybde */
+}
+
+.service-card:hover {
+  background: #ffffff !important; /* lysere ved hover */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12); /* premium hover */
+  border-color: #dcdcdc !important;
+}
+
+.service-card h3 {
+  color: #0a3d62 !important;
+}
+
+.service-card p {
+  color: #333 !important;
+}
