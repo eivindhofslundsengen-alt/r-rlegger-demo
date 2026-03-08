@@ -1014,3 +1014,60 @@ img {
 .service-card p {
   color: #333 !important;
 }
+/* Fade-up animasjon */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HERO – KUN for tjenester-siden */
+.tjenester-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 160px 0;
+}
+
+.tjenester-hero .page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55); /* dimming */
+  z-index: 1;
+}
+
+.tjenester-hero .page-hero-inner {
+  position: relative;
+  z-index: 2; /* tekst foran */
+  color: white;
+  max-width: 700px;
+}
+
+/* Tjenestebokser – kun styling, ikke hover */
+.service-card {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+  border: 1px solid #e5e5e5 !important;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Lys hover – lesbar */
+.service-card:hover {
+  background: #f5f5f5 !important;
+  color: #000 !important;
+  border-color: #dcdcdc !important;
+}
+
+.service-card h3 {
+  color: #0a3d62 !important;
+}
+
+.service-card p {
+  color: #333 !important;
+}
