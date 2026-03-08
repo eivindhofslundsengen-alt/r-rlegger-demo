@@ -1014,4 +1014,27 @@ img {
 .service-card p {
   color: #333;
 }
+.page-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 160px 0;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
 
