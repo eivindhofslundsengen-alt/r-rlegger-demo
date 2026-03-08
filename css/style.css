@@ -969,4 +969,49 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
+.page-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 160px 0;
+  color: white;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.page-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.page-hero-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+.service-card {
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 1px solid #e5e5e5;
+}
+
+.service-card h3 {
+  color: #0a3d62;
+}
+
+.service-card p {
+  color: #333;
+}
 
